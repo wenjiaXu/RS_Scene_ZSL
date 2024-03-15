@@ -1,0 +1,334 @@
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 6, in <module>
+    import visual_utils
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 11, in <module>
+    import h5py
+ModuleNotFoundError: No module named 'h5py'
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_61_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=4702, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=False, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=40, cpt=1e-09, calibrated_stacking=0.7, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  4702
+feature.shape (56000, 2048)
+attribute.shape: torch.Size([70, 98])
+Create Model...
+version=1
+Train and test...
+
+ 2023-11-20 21:01:37 Training epoch 0
+acc_final_all:73.5% acc_final_avg:73.5%
+acc_layer_all:83.3% acc_layer_avg:83.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 0 Batch 300] ZSL test accuracy is 83.3%, Best_acc [83.3% | Epoch-0]
+
+[Epoch 0, Batch   300] Train loss: 8.187 
+
+ 2023-11-20 21:03:15 Training epoch 1
+acc_final_all:77.2% acc_final_avg:77.2%
+acc_layer_all:83.2% acc_layer_avg:83.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 1 Batch 300] ZSL test accuracy is 83.2%, Best_acc [83.3% | Epoch-0]
+
+[Epoch 1, Batch   300] Train loss: 8.186 
+
+ 2023-11-20 21:03:39 Training epoch 2
+acc_final_all:77.2% acc_final_avg:77.2%
+acc_layer_all:86.5% acc_layer_avg:86.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 2 Batch 300] ZSL test accuracy is 86.5%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 2, Batch   300] Train loss: 8.185 
+
+ 2023-11-20 21:03:58 Training epoch 3
+acc_final_all:76.2% acc_final_avg:76.2%
+acc_layer_all:81.5% acc_layer_avg:81.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 3 Batch 300] ZSL test accuracy is 81.5%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 3, Batch   300] Train loss: 8.185 
+
+ 2023-11-20 21:04:17 Training epoch 4
+acc_final_all:79.7% acc_final_avg:79.7%
+acc_layer_all:82.7% acc_layer_avg:82.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 4 Batch 300] ZSL test accuracy is 82.7%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 4, Batch   300] Train loss: 8.185 
+
+ 2023-11-20 21:04:37 Training epoch 5
+acc_final_all:83.1% acc_final_avg:83.1%
+acc_layer_all:83.9% acc_layer_avg:83.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 5 Batch 300] ZSL test accuracy is 83.9%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 5, Batch   300] Train loss: 8.185 
+
+ 2023-11-20 21:05:01 Training epoch 6
+acc_final_all:81.4% acc_final_avg:81.4%
+acc_layer_all:83.1% acc_layer_avg:83.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 6 Batch 300] ZSL test accuracy is 83.1%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 6, Batch   300] Train loss: 8.183 
+
+ 2023-11-20 21:05:26 Training epoch 7
+acc_final_all:80.7% acc_final_avg:80.7%
+acc_layer_all:82.6% acc_layer_avg:82.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 7 Batch 300] ZSL test accuracy is 82.6%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 7, Batch   300] Train loss: 8.182 
+
+ 2023-11-20 21:05:50 Training epoch 8
+acc_final_all:82.3% acc_final_avg:82.3%
+acc_layer_all:84.4% acc_layer_avg:84.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 8 Batch 300] ZSL test accuracy is 84.4%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 8, Batch   300] Train loss: 8.181 
+
+ 2023-11-20 21:06:14 Training epoch 9
+acc_final_all:81.2% acc_final_avg:81.2%
+acc_layer_all:82.3% acc_layer_avg:82.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 9 Batch 300] ZSL test accuracy is 82.3%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 9, Batch   300] Train loss: 8.180 
+
+ 2023-11-20 21:06:36 Training epoch 10
+acc_final_all:79.4% acc_final_avg:79.4%
+acc_layer_all:81.0% acc_layer_avg:81.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 10 Batch 300] ZSL test accuracy is 81.0%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 10, Batch   300] Train loss: 8.180 
+
+ 2023-11-20 21:06:57 Training epoch 11
+acc_final_all:79.8% acc_final_avg:79.8%
+acc_layer_all:81.7% acc_layer_avg:81.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 11 Batch 300] ZSL test accuracy is 81.7%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 11, Batch   300] Train loss: 8.180 
+
+ 2023-11-20 21:07:19 Training epoch 12
+acc_final_all:79.9% acc_final_avg:79.9%
+acc_layer_all:81.3% acc_layer_avg:81.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 12 Batch 300] ZSL test accuracy is 81.3%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 12, Batch   300] Train loss: 8.178 
+
+ 2023-11-20 21:07:43 Training epoch 13
+acc_final_all:79.7% acc_final_avg:79.7%
+acc_layer_all:80.9% acc_layer_avg:80.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 13 Batch 300] ZSL test accuracy is 80.9%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 13, Batch   300] Train loss: 8.179 
+
+ 2023-11-20 21:08:06 Training epoch 14
+acc_final_all:78.8% acc_final_avg:78.8%
+acc_layer_all:79.5% acc_layer_avg:79.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 14 Batch 300] ZSL test accuracy is 79.5%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 14, Batch   300] Train loss: 8.179 
+
+ 2023-11-20 21:08:30 Training epoch 15
+acc_final_all:79.4% acc_final_avg:79.4%
+acc_layer_all:80.5% acc_layer_avg:80.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 15 Batch 300] ZSL test accuracy is 80.5%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 15, Batch   300] Train loss: 8.178 
+
+ 2023-11-20 21:08:51 Training epoch 16
+acc_final_all:79.6% acc_final_avg:79.6%
+acc_layer_all:80.7% acc_layer_avg:80.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 16 Batch 300] ZSL test accuracy is 80.7%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 16, Batch   300] Train loss: 8.177 
+
+ 2023-11-20 21:09:13 Training epoch 17
+acc_final_all:80.3% acc_final_avg:80.3%
+acc_layer_all:81.0% acc_layer_avg:81.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 17 Batch 300] ZSL test accuracy is 81.0%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 17, Batch   300] Train loss: 8.177 
+
+ 2023-11-20 21:09:36 Training epoch 18
+acc_final_all:79.2% acc_final_avg:79.2%
+acc_layer_all:80.1% acc_layer_avg:80.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 18 Batch 300] ZSL test accuracy is 80.1%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 18, Batch   300] Train loss: 8.177 
+
+ 2023-11-20 21:10:00 Training epoch 19
+acc_final_all:77.6% acc_final_avg:77.6%
+acc_layer_all:78.1% acc_layer_avg:78.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 19 Batch 300] ZSL test accuracy is 78.1%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 19, Batch   300] Train loss: 8.176 
+
+ 2023-11-20 21:10:24 Training epoch 20
+acc_final_all:76.9% acc_final_avg:76.9%
+acc_layer_all:77.8% acc_layer_avg:77.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 20 Batch 300] ZSL test accuracy is 77.8%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 20, Batch   300] Train loss: 8.177 
+
+ 2023-11-20 21:10:48 Training epoch 21
+acc_final_all:76.7% acc_final_avg:76.7%
+acc_layer_all:77.1% acc_layer_avg:77.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 21 Batch 300] ZSL test accuracy is 77.1%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 21, Batch   300] Train loss: 8.176 
+
+ 2023-11-20 21:11:12 Training epoch 22
+acc_final_all:78.4% acc_final_avg:78.4%
+acc_layer_all:79.2% acc_layer_avg:79.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 22 Batch 300] ZSL test accuracy is 79.2%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 22, Batch   300] Train loss: 8.175 
+
+ 2023-11-20 21:11:34 Training epoch 23
+acc_final_all:77.8% acc_final_avg:77.8%
+acc_layer_all:78.1% acc_layer_avg:78.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 23 Batch 300] ZSL test accuracy is 78.1%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 23, Batch   300] Train loss: 8.175 
+
+ 2023-11-20 21:11:55 Training epoch 24
+acc_final_all:75.5% acc_final_avg:75.5%
+acc_layer_all:77.0% acc_layer_avg:77.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 24 Batch 300] ZSL test accuracy is 77.0%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 24, Batch   300] Train loss: 8.176 
+
+ 2023-11-20 21:12:17 Training epoch 25
+acc_final_all:77.2% acc_final_avg:77.2%
+acc_layer_all:78.5% acc_layer_avg:78.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 25 Batch 300] ZSL test accuracy is 78.4%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 25, Batch   300] Train loss: 8.175 
+
+ 2023-11-20 21:12:38 Training epoch 26
+acc_final_all:78.0% acc_final_avg:78.0%
+acc_layer_all:78.7% acc_layer_avg:78.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 26 Batch 300] ZSL test accuracy is 78.7%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 26, Batch   300] Train loss: 8.176 
+
+ 2023-11-20 21:12:59 Training epoch 27
+acc_final_all:78.2% acc_final_avg:78.2%
+acc_layer_all:78.9% acc_layer_avg:78.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 27 Batch 300] ZSL test accuracy is 78.9%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 27, Batch   300] Train loss: 8.175 
+
+ 2023-11-20 21:13:25 Training epoch 28
+acc_final_all:77.8% acc_final_avg:77.8%
+acc_layer_all:78.5% acc_layer_avg:78.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 28 Batch 300] ZSL test accuracy is 78.5%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 28, Batch   300] Train loss: 8.174 
+
+ 2023-11-20 21:13:51 Training epoch 29
+acc_final_all:76.9% acc_final_avg:76.9%
+acc_layer_all:78.1% acc_layer_avg:78.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 29 Batch 300] ZSL test accuracy is 78.1%, Best_acc [86.5% | Epoch-2]
+
+[Epoch 29, Batch   300] Train loss: 8.174 
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/yzj/data/code/ISPRS/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_61_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=4702, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=False, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=40, cpt=1e-09, calibrated_stacking=0.7, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  4702
+Traceback (most recent call last):
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 199, in <module>
+    main()
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 40, in main
+    data = visual_utils.DATA_LOADER(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 96, in __init__
+    self.read_matdataset(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 173, in read_matdataset
+    matcontent = sio.loadmat(opt.image_embedding_path)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 225, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat'
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/yzj/data/code/ISPRS/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_61_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=4702, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=False, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=40, cpt=1e-09, calibrated_stacking=0.7, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  4702
+Traceback (most recent call last):
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 199, in <module>
+    main()
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 40, in main
+    data = visual_utils.DATA_LOADER(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 96, in __init__
+    self.read_matdataset(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 173, in read_matdataset
+    matcontent = sio.loadmat(opt.image_embedding_path)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 225, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat'
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/yzj/data/code/ISPRS/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_61_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=4702, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=False, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=40, cpt=1e-09, calibrated_stacking=0.7, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  4702
+Traceback (most recent call last):
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 199, in <module>
+    main()
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 40, in main
+    data = visual_utils.DATA_LOADER(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 96, in __init__
+    self.read_matdataset(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 173, in read_matdataset
+    matcontent = sio.loadmat(opt.image_embedding_path)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 225, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/61_images.mat'

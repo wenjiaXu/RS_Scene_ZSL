@@ -1,0 +1,947 @@
+opt: Namespace(IoU_scale=1.4, IoU_thr=0.5, KNOW_BIRD_BB=False, additional_loss=True, all=False, attention_K=3, attri=0.01, attri_dim=98, avg_pool=False, awa_finetune=False, batch_size=64, beta1=0.5, calibrated_stacking=0.0001, checkpointroot='./checkpoint', class_embedding='att', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/data/RSSDIVCS/files/ann_attr_finetune_43_splits.mat', classifier_lr=1e-06, cpt=1e-09, cuda=True, dataroot='./data', dataset='RSSDIVCS', gzsl=True, image_embedding='res101', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/data/RSSDIVCS/files/43_images.mat', image_root='/home/xwj/data/2023_code/RS_ZSL/data/RSSDIVCS/', image_type='test_unseen_loc', l_attri=0.08, l_regular=0.0, l_xe=1.0, lasso=False, manualSeed=1342, matdataset=True, max_area_center=False, n_batch=300, nepoch=30, ol=False, out_of_edge=False, preprocessing=True, pretrain_classifier='', pretrain_epoch=4, pretrain_lr=0.0001, pretrained=None, pro_size=3, pro_start_epoch=-1, pro_thr=1.0, pro_type=4, pro_weight=1, proto_warm=2, random_id=0, regular=0.0, resize_WH=False, resnet_path='./pretrained_models/resnet101_c.pth.tar', root='./', save_att=False, sel_res='layer', shots=3, standardization=False, train_id=123, train_mode='distributed', transform_mode='normal', use_group=True, use_proposal=False, validation=False, version=1, ways=8, xe=1.0, xe_pro=1.0)
+Random Seed:  1342
+feature.shape (56000, 2048)
+attribute.shape: torch.Size([70, 98])
+Create Model...
+Train and test...
+
+ 2023-05-13 23:10:38 Training epoch 0
+seen acc:
+acc_layer_all:50.2% acc_layer_avg:50.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:39.2% acc_avg:39.2%
+unseen acc:
+acc_layer_all:47.1% acc_layer_avg:47.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:18.9% acc_avg:18.9%
+[Epoch 0 Batch 300] GZSL test accuracy is Unseen: 47.1 Seen: 50.2 H:48.6
+           Best_H [Unseen: 47.1% Seen: 50.2% H: 48.6% | Epoch-1]
+
+[Epoch 0, Batch   300] Train loss: 7.368 
+
+ 2023-05-13 23:13:27 Training epoch 1
+seen acc:
+acc_layer_all:55.7% acc_layer_avg:55.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:37.7% acc_avg:37.7%
+unseen acc:
+acc_layer_all:44.7% acc_layer_avg:44.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:15.2% acc_avg:15.2%
+[Epoch 1 Batch 300] GZSL test accuracy is Unseen: 44.7 Seen: 55.7 H:49.6
+           Best_H [Unseen: 44.7% Seen: 55.7% H: 49.6% | Epoch-2]
+
+[Epoch 1, Batch   300] Train loss: 7.346 
+
+ 2023-05-13 23:16:05 Training epoch 2
+seen acc:
+acc_layer_all:57.6% acc_layer_avg:57.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:37.6% acc_avg:37.6%
+unseen acc:
+acc_layer_all:44.0% acc_layer_avg:44.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:16.0% acc_avg:16.0%
+[Epoch 2 Batch 300] GZSL test accuracy is Unseen: 44.0 Seen: 57.6 H:49.9
+           Best_H [Unseen: 44.0% Seen: 57.6% H: 49.9% | Epoch-3]
+
+[Epoch 2, Batch   300] Train loss: 7.317 
+
+ 2023-05-13 23:18:44 Training epoch 3
+seen acc:
+acc_layer_all:58.9% acc_layer_avg:58.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:42.4% acc_avg:42.4%
+unseen acc:
+acc_layer_all:42.8% acc_layer_avg:42.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.2% acc_avg:19.2%
+[Epoch 3 Batch 300] GZSL test accuracy is Unseen: 42.8 Seen: 58.9 H:49.6
+           Best_H [Unseen: 44.0% Seen: 57.6% H: 49.9% | Epoch-3]
+
+[Epoch 3, Batch   300] Train loss: 7.298 
+
+ 2023-05-13 23:21:27 Training epoch 4
+seen acc:
+acc_layer_all:60.4% acc_layer_avg:60.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:46.3% acc_avg:46.3%
+unseen acc:
+acc_layer_all:42.1% acc_layer_avg:42.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.4% acc_avg:19.4%
+[Epoch 4 Batch 300] GZSL test accuracy is Unseen: 42.1 Seen: 60.4 H:49.6
+           Best_H [Unseen: 44.0% Seen: 57.6% H: 49.9% | Epoch-3]
+
+[Epoch 4, Batch   300] Train loss: 7.278 
+
+ 2023-05-13 23:24:05 Training epoch 5
+seen acc:
+acc_layer_all:65.2% acc_layer_avg:65.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:63.9% acc_avg:63.9%
+unseen acc:
+acc_layer_all:39.1% acc_layer_avg:39.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:27.7% acc_avg:27.7%
+[Epoch 5 Batch 300] GZSL test accuracy is Unseen: 39.1 Seen: 65.2 H:48.9
+           Best_H [Unseen: 44.0% Seen: 57.6% H: 49.9% | Epoch-3]
+
+[Epoch 5, Batch   300] Train loss: 7.192 
+
+ 2023-05-13 23:26:55 Training epoch 6
+seen acc:
+acc_layer_all:67.3% acc_layer_avg:67.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:67.5% acc_avg:67.5%
+unseen acc:
+acc_layer_all:40.4% acc_layer_avg:40.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:27.0% acc_avg:27.0%
+[Epoch 6 Batch 300] GZSL test accuracy is Unseen: 40.4 Seen: 67.3 H:50.5
+           Best_H [Unseen: 40.4% Seen: 67.3% H: 50.5% | Epoch-7]
+
+[Epoch 6, Batch   300] Train loss: 7.114 
+
+ 2023-05-13 23:29:37 Training epoch 7
+seen acc:
+acc_layer_all:67.0% acc_layer_avg:67.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:72.5% acc_avg:72.5%
+unseen acc:
+acc_layer_all:38.6% acc_layer_avg:38.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:26.1% acc_avg:26.1%
+[Epoch 7 Batch 300] GZSL test accuracy is Unseen: 38.6 Seen: 67.0 H:49.0
+           Best_H [Unseen: 40.4% Seen: 67.3% H: 50.5% | Epoch-7]
+
+[Epoch 7, Batch   300] Train loss: 7.054 
+
+ 2023-05-13 23:32:25 Training epoch 8
+seen acc:
+acc_layer_all:68.7% acc_layer_avg:68.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:74.8% acc_avg:74.8%
+unseen acc:
+acc_layer_all:40.4% acc_layer_avg:40.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:25.8% acc_avg:25.8%
+[Epoch 8 Batch 300] GZSL test accuracy is Unseen: 40.4 Seen: 68.7 H:50.9
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 8, Batch   300] Train loss: 7.003 
+
+ 2023-05-13 23:35:16 Training epoch 9
+seen acc:
+acc_layer_all:70.2% acc_layer_avg:70.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:78.1% acc_avg:78.1%
+unseen acc:
+acc_layer_all:38.7% acc_layer_avg:38.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:24.7% acc_avg:24.7%
+[Epoch 9 Batch 300] GZSL test accuracy is Unseen: 38.7 Seen: 70.2 H:49.9
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 9, Batch   300] Train loss: 6.965 
+
+ 2023-05-13 23:37:57 Training epoch 10
+seen acc:
+acc_layer_all:70.3% acc_layer_avg:70.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:79.5% acc_avg:79.5%
+unseen acc:
+acc_layer_all:37.9% acc_layer_avg:37.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:23.4% acc_avg:23.4%
+[Epoch 10 Batch 300] GZSL test accuracy is Unseen: 37.9 Seen: 70.3 H:49.2
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 10, Batch   300] Train loss: 6.953 
+
+ 2023-05-13 23:40:48 Training epoch 11
+seen acc:
+acc_layer_all:71.5% acc_layer_avg:71.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:79.5% acc_avg:79.5%
+unseen acc:
+acc_layer_all:38.8% acc_layer_avg:38.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:23.8% acc_avg:23.8%
+[Epoch 11 Batch 300] GZSL test accuracy is Unseen: 38.8 Seen: 71.5 H:50.3
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 11, Batch   300] Train loss: 6.936 
+
+ 2023-05-13 23:43:28 Training epoch 12
+seen acc:
+acc_layer_all:71.7% acc_layer_avg:71.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:80.8% acc_avg:80.8%
+unseen acc:
+acc_layer_all:35.9% acc_layer_avg:35.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:21.2% acc_avg:21.2%
+[Epoch 12 Batch 300] GZSL test accuracy is Unseen: 35.9 Seen: 71.7 H:47.8
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 12, Batch   300] Train loss: 6.922 
+
+ 2023-05-13 23:46:11 Training epoch 13
+seen acc:
+acc_layer_all:72.8% acc_layer_avg:72.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:81.2% acc_avg:81.2%
+unseen acc:
+acc_layer_all:35.6% acc_layer_avg:35.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:20.0% acc_avg:20.0%
+[Epoch 13 Batch 300] GZSL test accuracy is Unseen: 35.6 Seen: 72.8 H:47.8
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 13, Batch   300] Train loss: 6.899 
+
+ 2023-05-13 23:49:04 Training epoch 14
+seen acc:
+acc_layer_all:73.0% acc_layer_avg:73.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:82.1% acc_avg:82.1%
+unseen acc:
+acc_layer_all:36.7% acc_layer_avg:36.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:21.2% acc_avg:21.2%
+[Epoch 14 Batch 300] GZSL test accuracy is Unseen: 36.7 Seen: 73.0 H:48.8
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 14, Batch   300] Train loss: 6.888 
+
+ 2023-05-13 23:51:48 Training epoch 15
+seen acc:
+acc_layer_all:73.9% acc_layer_avg:73.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:83.1% acc_avg:83.1%
+unseen acc:
+acc_layer_all:37.5% acc_layer_avg:37.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:20.2% acc_avg:20.2%
+[Epoch 15 Batch 300] GZSL test accuracy is Unseen: 37.5 Seen: 73.9 H:49.7
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 15, Batch   300] Train loss: 6.880 
+
+ 2023-05-13 23:54:39 Training epoch 16
+seen acc:
+acc_layer_all:74.9% acc_layer_avg:74.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:82.8% acc_avg:82.8%
+unseen acc:
+acc_layer_all:34.0% acc_layer_avg:34.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:20.8% acc_avg:20.8%
+[Epoch 16 Batch 300] GZSL test accuracy is Unseen: 34.0 Seen: 74.9 H:46.8
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 16, Batch   300] Train loss: 6.871 
+
+ 2023-05-13 23:57:19 Training epoch 17
+seen acc:
+acc_layer_all:74.8% acc_layer_avg:74.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:84.5% acc_avg:84.5%
+unseen acc:
+acc_layer_all:35.2% acc_layer_avg:35.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.4% acc_avg:19.4%
+[Epoch 17 Batch 300] GZSL test accuracy is Unseen: 35.2 Seen: 74.8 H:47.8
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 17, Batch   300] Train loss: 6.869 
+
+ 2023-05-14 00:00:02 Training epoch 18
+seen acc:
+acc_layer_all:74.3% acc_layer_avg:74.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:84.5% acc_avg:84.5%
+unseen acc:
+acc_layer_all:33.6% acc_layer_avg:33.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.2% acc_avg:19.2%
+[Epoch 18 Batch 300] GZSL test accuracy is Unseen: 33.6 Seen: 74.3 H:46.3
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 18, Batch   300] Train loss: 6.855 
+
+ 2023-05-14 00:02:45 Training epoch 19
+seen acc:
+acc_layer_all:74.4% acc_layer_avg:74.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:84.3% acc_avg:84.3%
+unseen acc:
+acc_layer_all:31.8% acc_layer_avg:31.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:18.2% acc_avg:18.2%
+[Epoch 19 Batch 300] GZSL test accuracy is Unseen: 31.8 Seen: 74.4 H:44.6
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 19, Batch   300] Train loss: 6.850 
+
+ 2023-05-14 00:05:26 Training epoch 20
+seen acc:
+acc_layer_all:74.5% acc_layer_avg:74.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:85.2% acc_avg:85.2%
+unseen acc:
+acc_layer_all:33.1% acc_layer_avg:33.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:18.0% acc_avg:18.0%
+[Epoch 20 Batch 300] GZSL test accuracy is Unseen: 33.1 Seen: 74.5 H:45.8
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 20, Batch   300] Train loss: 6.844 
+
+ 2023-05-14 00:08:18 Training epoch 21
+seen acc:
+acc_layer_all:73.7% acc_layer_avg:73.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:86.5% acc_avg:86.5%
+unseen acc:
+acc_layer_all:31.8% acc_layer_avg:31.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:16.5% acc_avg:16.5%
+[Epoch 21 Batch 300] GZSL test accuracy is Unseen: 31.8 Seen: 73.7 H:44.4
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 21, Batch   300] Train loss: 6.839 
+
+ 2023-05-14 00:10:27 Training epoch 22
+seen acc:
+acc_layer_all:74.5% acc_layer_avg:74.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:86.9% acc_avg:86.9%
+unseen acc:
+acc_layer_all:31.3% acc_layer_avg:31.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:15.5% acc_avg:15.5%
+[Epoch 22 Batch 300] GZSL test accuracy is Unseen: 31.3 Seen: 74.5 H:44.1
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 22, Batch   300] Train loss: 6.832 
+
+ 2023-05-14 00:12:19 Training epoch 23
+seen acc:
+acc_layer_all:75.0% acc_layer_avg:75.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:85.3% acc_avg:85.3%
+unseen acc:
+acc_layer_all:31.7% acc_layer_avg:31.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:16.1% acc_avg:16.1%
+[Epoch 23 Batch 300] GZSL test accuracy is Unseen: 31.7 Seen: 75.0 H:44.5
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 23, Batch   300] Train loss: 6.838 
+
+ 2023-05-14 00:14:11 Training epoch 24
+seen acc:
+acc_layer_all:75.2% acc_layer_avg:75.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:86.6% acc_avg:86.6%
+unseen acc:
+acc_layer_all:29.2% acc_layer_avg:29.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:15.2% acc_avg:15.2%
+[Epoch 24 Batch 300] GZSL test accuracy is Unseen: 29.2 Seen: 75.2 H:42.1
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 24, Batch   300] Train loss: 6.821 
+
+ 2023-05-14 00:16:03 Training epoch 25
+seen acc:
+acc_layer_all:75.0% acc_layer_avg:75.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:88.2% acc_avg:88.2%
+unseen acc:
+acc_layer_all:30.7% acc_layer_avg:30.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:15.3% acc_avg:15.3%
+[Epoch 25 Batch 300] GZSL test accuracy is Unseen: 30.7 Seen: 75.0 H:43.5
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 25, Batch   300] Train loss: 6.815 
+
+ 2023-05-14 00:17:53 Training epoch 26
+seen acc:
+acc_layer_all:75.9% acc_layer_avg:75.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:87.2% acc_avg:87.2%
+unseen acc:
+acc_layer_all:28.4% acc_layer_avg:28.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:14.2% acc_avg:14.2%
+[Epoch 26 Batch 300] GZSL test accuracy is Unseen: 28.4 Seen: 75.9 H:41.3
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 26, Batch   300] Train loss: 6.823 
+
+ 2023-05-14 00:18:59 Training epoch 27
+seen acc:
+acc_layer_all:76.3% acc_layer_avg:76.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:89.3% acc_avg:89.4%
+unseen acc:
+acc_layer_all:30.1% acc_layer_avg:30.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:14.1% acc_avg:14.1%
+[Epoch 27 Batch 300] GZSL test accuracy is Unseen: 30.1 Seen: 76.3 H:43.2
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 27, Batch   300] Train loss: 6.824 
+
+ 2023-05-14 00:20:05 Training epoch 28
+seen acc:
+acc_layer_all:75.9% acc_layer_avg:75.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:88.7% acc_avg:88.7%
+unseen acc:
+acc_layer_all:28.3% acc_layer_avg:28.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:13.8% acc_avg:13.8%
+[Epoch 28 Batch 300] GZSL test accuracy is Unseen: 28.3 Seen: 75.9 H:41.3
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 28, Batch   300] Train loss: 6.813 
+
+ 2023-05-14 00:21:11 Training epoch 29
+seen acc:
+acc_layer_all:75.4% acc_layer_avg:75.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:90.0% acc_avg:90.0%
+unseen acc:
+acc_layer_all:27.7% acc_layer_avg:27.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:13.2% acc_avg:13.2%
+[Epoch 29 Batch 300] GZSL test accuracy is Unseen: 27.7 Seen: 75.4 H:40.5
+           Best_H [Unseen: 40.4% Seen: 68.7% H: 50.9% | Epoch-9]
+
+[Epoch 29, Batch   300] Train loss: 6.807 
+Test with iou
+Traceback (most recent call last):
+  File "./model/main_proposal_CLIP_nn.py", line 283, in <module>
+    main()
+  File "./model/main_proposal_CLIP_nn.py", line 277, in main
+    attri_names=data.attri_name, required_num=5,
+AttributeError: 'DATA_LOADER' object has no attribute 'attri_name'
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 6, in <module>
+    import visual_utils
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 11, in <module>
+    import h5py
+ModuleNotFoundError: No module named 'h5py'
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_43_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=1342, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=True, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=-1, cpt=1e-09, calibrated_stacking=0.0001, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  1342
+feature.shape (56000, 2048)
+attribute.shape: torch.Size([70, 98])
+Create Model...
+version=1
+Train and test...
+
+ 2023-11-20 21:01:38 Training epoch 0
+seen acc:
+acc_layer_all:49.7% acc_layer_avg:49.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:39.1% acc_avg:39.1%
+unseen acc:
+acc_layer_all:45.6% acc_layer_avg:45.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:18.9% acc_avg:18.9%
+[Epoch 0 Batch 300] GZSL test accuracy is Unseen: 45.6 Seen: 49.7 H:47.6
+           Best_H [Unseen: 45.6% Seen: 49.7% H: 47.6% | Epoch-1]
+
+[Epoch 0, Batch   300] Train loss: 7.368 
+
+ 2023-11-20 21:06:35 Training epoch 1
+seen acc:
+acc_layer_all:55.5% acc_layer_avg:55.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:37.4% acc_avg:37.4%
+unseen acc:
+acc_layer_all:43.6% acc_layer_avg:43.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:15.4% acc_avg:15.4%
+[Epoch 1 Batch 300] GZSL test accuracy is Unseen: 43.6 Seen: 55.5 H:48.8
+           Best_H [Unseen: 43.6% Seen: 55.5% H: 48.8% | Epoch-2]
+
+[Epoch 1, Batch   300] Train loss: 7.347 
+
+ 2023-11-20 21:11:04 Training epoch 2
+seen acc:
+acc_layer_all:57.2% acc_layer_avg:57.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:37.4% acc_avg:37.4%
+unseen acc:
+acc_layer_all:43.0% acc_layer_avg:43.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:15.7% acc_avg:15.7%
+[Epoch 2 Batch 300] GZSL test accuracy is Unseen: 43.0 Seen: 57.2 H:49.1
+           Best_H [Unseen: 43.0% Seen: 57.2% H: 49.1% | Epoch-3]
+
+[Epoch 2, Batch   300] Train loss: 7.317 
+
+ 2023-11-20 21:15:35 Training epoch 3
+seen acc:
+acc_layer_all:58.6% acc_layer_avg:58.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:41.9% acc_avg:41.9%
+unseen acc:
+acc_layer_all:41.5% acc_layer_avg:41.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.2% acc_avg:19.2%
+[Epoch 3 Batch 300] GZSL test accuracy is Unseen: 41.5 Seen: 58.5 H:48.5
+           Best_H [Unseen: 43.0% Seen: 57.2% H: 49.1% | Epoch-3]
+
+[Epoch 3, Batch   300] Train loss: 7.298 
+
+ 2023-11-20 21:20:06 Training epoch 4
+seen acc:
+acc_layer_all:60.0% acc_layer_avg:60.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:46.1% acc_avg:46.1%
+unseen acc:
+acc_layer_all:41.9% acc_layer_avg:41.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.7% acc_avg:19.7%
+[Epoch 4 Batch 300] GZSL test accuracy is Unseen: 41.9 Seen: 60.0 H:49.3
+           Best_H [Unseen: 41.9% Seen: 60.0% H: 49.3% | Epoch-5]
+
+[Epoch 4, Batch   300] Train loss: 7.278 
+
+ 2023-11-20 21:24:35 Training epoch 5
+seen acc:
+acc_layer_all:66.3% acc_layer_avg:66.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:63.6% acc_avg:63.6%
+unseen acc:
+acc_layer_all:40.0% acc_layer_avg:40.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:28.3% acc_avg:28.3%
+[Epoch 5 Batch 300] GZSL test accuracy is Unseen: 40.0 Seen: 66.3 H:49.9
+           Best_H [Unseen: 40.0% Seen: 66.3% H: 49.9% | Epoch-6]
+
+[Epoch 5, Batch   300] Train loss: 7.193 
+
+ 2023-11-20 21:29:18 Training epoch 6
+seen acc:
+acc_layer_all:67.8% acc_layer_avg:67.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:67.5% acc_avg:67.5%
+unseen acc:
+acc_layer_all:40.8% acc_layer_avg:40.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:27.9% acc_avg:27.9%
+[Epoch 6 Batch 300] GZSL test accuracy is Unseen: 40.8 Seen: 67.8 H:51.0
+           Best_H [Unseen: 40.8% Seen: 67.8% H: 51.0% | Epoch-7]
+
+[Epoch 6, Batch   300] Train loss: 7.115 
+
+ 2023-11-20 21:33:58 Training epoch 7
+seen acc:
+acc_layer_all:67.0% acc_layer_avg:67.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:73.1% acc_avg:73.1%
+unseen acc:
+acc_layer_all:39.5% acc_layer_avg:39.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:26.5% acc_avg:26.5%
+[Epoch 7 Batch 300] GZSL test accuracy is Unseen: 39.5 Seen: 67.0 H:49.7
+           Best_H [Unseen: 40.8% Seen: 67.8% H: 51.0% | Epoch-7]
+
+[Epoch 7, Batch   300] Train loss: 7.055 
+
+ 2023-11-20 21:38:43 Training epoch 8
+seen acc:
+acc_layer_all:68.9% acc_layer_avg:68.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:74.7% acc_avg:74.7%
+unseen acc:
+acc_layer_all:41.6% acc_layer_avg:41.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:26.1% acc_avg:26.1%
+[Epoch 8 Batch 300] GZSL test accuracy is Unseen: 41.6 Seen: 68.9 H:51.8
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 8, Batch   300] Train loss: 7.005 
+
+ 2023-11-20 21:43:21 Training epoch 9
+seen acc:
+acc_layer_all:69.4% acc_layer_avg:69.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:78.0% acc_avg:78.0%
+unseen acc:
+acc_layer_all:39.9% acc_layer_avg:39.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:23.9% acc_avg:23.9%
+[Epoch 9 Batch 300] GZSL test accuracy is Unseen: 39.9 Seen: 69.4 H:50.7
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 9, Batch   300] Train loss: 6.966 
+
+ 2023-11-20 21:47:52 Training epoch 10
+seen acc:
+acc_layer_all:69.9% acc_layer_avg:69.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:79.2% acc_avg:79.2%
+unseen acc:
+acc_layer_all:38.7% acc_layer_avg:38.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:23.8% acc_avg:23.8%
+[Epoch 10 Batch 300] GZSL test accuracy is Unseen: 38.7 Seen: 69.9 H:49.8
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 10, Batch   300] Train loss: 6.954 
+
+ 2023-11-20 21:52:37 Training epoch 11
+seen acc:
+acc_layer_all:69.4% acc_layer_avg:69.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:80.0% acc_avg:80.0%
+unseen acc:
+acc_layer_all:41.1% acc_layer_avg:41.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:24.4% acc_avg:24.4%
+[Epoch 11 Batch 300] GZSL test accuracy is Unseen: 41.1 Seen: 69.4 H:51.7
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 11, Batch   300] Train loss: 6.937 
+
+ 2023-11-20 21:57:09 Training epoch 12
+seen acc:
+acc_layer_all:70.2% acc_layer_avg:70.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:81.2% acc_avg:81.2%
+unseen acc:
+acc_layer_all:37.3% acc_layer_avg:37.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:21.1% acc_avg:21.1%
+[Epoch 12 Batch 300] GZSL test accuracy is Unseen: 37.3 Seen: 70.2 H:48.7
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 12, Batch   300] Train loss: 6.922 
+
+ 2023-11-20 22:01:51 Training epoch 13
+seen acc:
+acc_layer_all:71.5% acc_layer_avg:71.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:81.3% acc_avg:81.3%
+unseen acc:
+acc_layer_all:37.5% acc_layer_avg:37.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:20.8% acc_avg:20.8%
+[Epoch 13 Batch 300] GZSL test accuracy is Unseen: 37.5 Seen: 71.5 H:49.2
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 13, Batch   300] Train loss: 6.900 
+
+ 2023-11-20 22:06:38 Training epoch 14
+seen acc:
+acc_layer_all:72.0% acc_layer_avg:71.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:82.0% acc_avg:82.0%
+unseen acc:
+acc_layer_all:36.5% acc_layer_avg:36.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:20.5% acc_avg:20.5%
+[Epoch 14 Batch 300] GZSL test accuracy is Unseen: 36.5 Seen: 71.9 H:48.4
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 14, Batch   300] Train loss: 6.890 
+
+ 2023-11-20 22:11:15 Training epoch 15
+seen acc:
+acc_layer_all:73.0% acc_layer_avg:73.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:82.4% acc_avg:82.4%
+unseen acc:
+acc_layer_all:37.4% acc_layer_avg:37.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.8% acc_avg:19.8%
+[Epoch 15 Batch 300] GZSL test accuracy is Unseen: 37.4 Seen: 73.0 H:49.5
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 15, Batch   300] Train loss: 6.882 
+
+ 2023-11-20 22:16:01 Training epoch 16
+seen acc:
+acc_layer_all:73.1% acc_layer_avg:73.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:82.6% acc_avg:82.6%
+unseen acc:
+acc_layer_all:34.6% acc_layer_avg:34.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:20.9% acc_avg:20.9%
+[Epoch 16 Batch 300] GZSL test accuracy is Unseen: 34.6 Seen: 73.1 H:47.0
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 16, Batch   300] Train loss: 6.872 
+
+ 2023-11-20 22:20:45 Training epoch 17
+seen acc:
+acc_layer_all:73.7% acc_layer_avg:73.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:84.5% acc_avg:84.5%
+unseen acc:
+acc_layer_all:35.6% acc_layer_avg:35.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:19.2% acc_avg:19.2%
+[Epoch 17 Batch 300] GZSL test accuracy is Unseen: 35.6 Seen: 73.7 H:48.0
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 17, Batch   300] Train loss: 6.870 
+
+ 2023-11-20 22:25:32 Training epoch 18
+seen acc:
+acc_layer_all:74.3% acc_layer_avg:74.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:84.4% acc_avg:84.4%
+unseen acc:
+acc_layer_all:34.1% acc_layer_avg:34.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:17.7% acc_avg:17.7%
+[Epoch 18 Batch 300] GZSL test accuracy is Unseen: 34.1 Seen: 74.3 H:46.8
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 18, Batch   300] Train loss: 6.857 
+
+ 2023-11-20 22:30:31 Training epoch 19
+seen acc:
+acc_layer_all:72.4% acc_layer_avg:72.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:83.9% acc_avg:83.9%
+unseen acc:
+acc_layer_all:32.0% acc_layer_avg:32.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:18.0% acc_avg:18.0%
+[Epoch 19 Batch 300] GZSL test accuracy is Unseen: 32.0 Seen: 72.4 H:44.4
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 19, Batch   300] Train loss: 6.853 
+
+ 2023-11-20 22:35:16 Training epoch 20
+seen acc:
+acc_layer_all:74.0% acc_layer_avg:74.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:84.7% acc_avg:84.7%
+unseen acc:
+acc_layer_all:34.0% acc_layer_avg:34.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:18.2% acc_avg:18.2%
+[Epoch 20 Batch 300] GZSL test accuracy is Unseen: 34.0 Seen: 74.0 H:46.6
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 20, Batch   300] Train loss: 6.847 
+
+ 2023-11-20 22:40:13 Training epoch 21
+seen acc:
+acc_layer_all:74.1% acc_layer_avg:74.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:85.9% acc_avg:85.9%
+unseen acc:
+acc_layer_all:33.3% acc_layer_avg:33.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:16.6% acc_avg:16.6%
+[Epoch 21 Batch 300] GZSL test accuracy is Unseen: 33.3 Seen: 74.0 H:46.0
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 21, Batch   300] Train loss: 6.842 
+
+ 2023-11-20 22:44:20 Training epoch 22
+seen acc:
+acc_layer_all:72.6% acc_layer_avg:72.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:86.6% acc_avg:86.6%
+unseen acc:
+acc_layer_all:32.6% acc_layer_avg:32.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:16.0% acc_avg:16.0%
+[Epoch 22 Batch 300] GZSL test accuracy is Unseen: 32.6 Seen: 72.6 H:45.0
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 22, Batch   300] Train loss: 6.834 
+
+ 2023-11-20 22:48:02 Training epoch 23
+seen acc:
+acc_layer_all:73.4% acc_layer_avg:73.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:86.1% acc_avg:86.1%
+unseen acc:
+acc_layer_all:32.8% acc_layer_avg:32.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:16.7% acc_avg:16.7%
+[Epoch 23 Batch 300] GZSL test accuracy is Unseen: 32.8 Seen: 73.4 H:45.4
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 23, Batch   300] Train loss: 6.840 
+
+ 2023-11-20 22:51:49 Training epoch 24
+seen acc:
+acc_layer_all:75.1% acc_layer_avg:75.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:87.0% acc_avg:87.0%
+unseen acc:
+acc_layer_all:30.9% acc_layer_avg:30.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:16.0% acc_avg:16.0%
+[Epoch 24 Batch 300] GZSL test accuracy is Unseen: 30.9 Seen: 75.1 H:43.8
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 24, Batch   300] Train loss: 6.823 
+
+ 2023-11-20 22:55:41 Training epoch 25
+seen acc:
+acc_layer_all:74.7% acc_layer_avg:74.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:87.5% acc_avg:87.4%
+unseen acc:
+acc_layer_all:31.4% acc_layer_avg:31.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:17.0% acc_avg:17.0%
+[Epoch 25 Batch 300] GZSL test accuracy is Unseen: 31.4 Seen: 74.7 H:44.2
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 25, Batch   300] Train loss: 6.816 
+
+ 2023-11-20 22:58:54 Training epoch 26
+seen acc:
+acc_layer_all:75.6% acc_layer_avg:75.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:87.0% acc_avg:87.0%
+unseen acc:
+acc_layer_all:28.4% acc_layer_avg:28.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:14.8% acc_avg:14.8%
+[Epoch 26 Batch 300] GZSL test accuracy is Unseen: 28.4 Seen: 75.6 H:41.3
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 26, Batch   300] Train loss: 6.824 
+
+ 2023-11-20 23:01:40 Training epoch 27
+seen acc:
+acc_layer_all:76.5% acc_layer_avg:76.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:89.6% acc_avg:89.6%
+unseen acc:
+acc_layer_all:29.7% acc_layer_avg:29.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:14.5% acc_avg:14.5%
+[Epoch 27 Batch 300] GZSL test accuracy is Unseen: 29.7 Seen: 76.5 H:42.8
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 27, Batch   300] Train loss: 6.826 
+
+ 2023-11-20 23:04:27 Training epoch 28
+seen acc:
+acc_layer_all:75.2% acc_layer_avg:75.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:89.0% acc_avg:89.0%
+unseen acc:
+acc_layer_all:29.5% acc_layer_avg:29.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:13.8% acc_avg:13.8%
+[Epoch 28 Batch 300] GZSL test accuracy is Unseen: 29.5 Seen: 75.2 H:42.4
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 28, Batch   300] Train loss: 6.815 
+
+ 2023-11-20 23:07:13 Training epoch 29
+seen acc:
+acc_layer_all:75.1% acc_layer_avg:75.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:90.2% acc_avg:90.3%
+unseen acc:
+acc_layer_all:28.2% acc_layer_avg:28.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+acc_all:13.6% acc_avg:13.6%
+[Epoch 29 Batch 300] GZSL test accuracy is Unseen: 28.2 Seen: 75.1 H:41.0
+           Best_H [Unseen: 41.6% Seen: 68.9% H: 51.8% | Epoch-9]
+
+[Epoch 29, Batch   300] Train loss: 6.809 
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/yzj/data/code/ISPRS/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_43_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=1342, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=True, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=-1, cpt=1e-09, calibrated_stacking=0.0001, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  1342
+Traceback (most recent call last):
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 199, in <module>
+    main()
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 40, in main
+    data = visual_utils.DATA_LOADER(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 96, in __init__
+    self.read_matdataset(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 173, in read_matdataset
+    matcontent = sio.loadmat(opt.image_embedding_path)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 225, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat'
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/yzj/data/code/ISPRS/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_43_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=1342, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=True, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=-1, cpt=1e-09, calibrated_stacking=0.0001, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  1342
+Traceback (most recent call last):
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 199, in <module>
+    main()
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 40, in main
+    data = visual_utils.DATA_LOADER(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 96, in __init__
+    self.read_matdataset(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 173, in read_matdataset
+    matcontent = sio.loadmat(opt.image_embedding_path)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 225, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat'
+opt: Namespace(dataset='RSSDIVCS', root='./', image_root='/home/yzj/data/code/ISPRS/ISPRS_2023_clean/RSSDIVCS/', matdataset=True, image_embedding='res101', class_embedding='att', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/ann_attr_finetune_43_splits.mat', random_id=0, preprocessing=True, standardization=False, ol=False, validation=False, batch_size=64, nepoch=30, classifier_lr=1e-06, beta1=0.5, cuda=True, pretrain_classifier='', manualSeed=1342, resnet_path='./pretrained_models/resnet101_c.pth.tar', train_id=123, pretrained=None, image_type='test_unseen_loc', pretrain_epoch=4, proto_warm=2, pretrain_lr=0.0001, gzsl=True, additional_loss=True, xe=1.0, attri=0.01, regular=0.0, l_xe=1.0, l_attri=0.08, l_regular=0.0, xe_pro=1.0, pro_type=4, attention_K=3, pro_size=3, pro_thr=1.0, pro_weight=1, pro_start_epoch=-1, cpt=1e-09, calibrated_stacking=0.0001, save_att=False, IoU_scale=1.4, IoU_thr=0.5, resize_WH=False, out_of_edge=False, max_area_center=False, KNOW_BIRD_BB=False, train_mode='distributed', n_batch=300, ways=8, shots=3, transform_mode='normal', awa_finetune=False, use_group=True, avg_pool=False, sel_res='layer', all=False, use_proposal=False, version=1, attri_dim=98, lasso=False, dataroot='./data', checkpointroot='./checkpoint')
+Random Seed:  1342
+Traceback (most recent call last):
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 199, in <module>
+    main()
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/./model/main.py", line 40, in main
+    data = visual_utils.DATA_LOADER(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 96, in __init__
+    self.read_matdataset(opt)
+  File "/home/yzj/data/code/ISPRS/ISPRS_2023_clean/code/model/visual_utils.py", line 173, in read_matdataset
+    matcontent = sio.loadmat(opt.image_embedding_path)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 225, in loadmat
+    with _open_file_context(file_name, appendmat) as f:
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 17, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/yzj/data/anaconda3/envs/zsl/lib/python3.9/site-packages/scipy/io/matlab/_mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+PermissionError: [Errno 13] Permission denied: '/home/xwj/data/2023_code/RS_ZSL/ISPRS_2023_clean/RSSDIVCS/files/43_images.mat'

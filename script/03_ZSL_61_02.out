@@ -1,0 +1,247 @@
+opt: Namespace(IoU_scale=1.4, IoU_thr=0.5, KNOW_BIRD_BB=False, additional_loss=True, all=False, attention_K=3, attri=0.01, attri_dim=98, avg_pool=False, awa_finetune=False, batch_size=64, beta1=0.5, calibrated_stacking=0.7, checkpointroot='./checkpoint', class_embedding='att', class_embedding_path='/home/xwj/data/2023_code/RS_ZSL/data/RSSDIVCS/files/ann_attr_finetune_61_splits.mat', classifier_lr=1e-06, cpt=1e-09, cuda=True, dataroot='./data', dataset='RSSDIVCS', gzsl=False, image_embedding='res101', image_embedding_path='/home/xwj/data/2023_code/RS_ZSL/data/RSSDIVCS/files/61_images.mat', image_root='/home/xwj/data/2023_code/RS_ZSL/data/RSSDIVCS/', image_type='test_unseen_loc', l_attri=0.08, l_regular=0.0, l_xe=1.0, lasso=False, manualSeed=4702, matdataset=True, max_area_center=False, n_batch=300, nepoch=30, ol=False, out_of_edge=False, preprocessing=True, pretrain_classifier='', pretrain_epoch=4, pretrain_lr=0.0001, pretrained=None, pro_size=3, pro_start_epoch=40, pro_thr=1.0, pro_type=4, pro_weight=1, proto_warm=2, random_id=0, regular=0.0, resize_WH=False, resnet_path='./pretrained_models/resnet101_c.pth.tar', root='./', save_att=False, sel_res='layer', shots=3, standardization=False, train_id=123, train_mode='distributed', transform_mode='normal', use_group=True, use_proposal=False, validation=False, version=1, ways=8, xe=1.0, xe_pro=1.0)
+Random Seed:  4702
+feature.shape (56000, 2048)
+attribute.shape: torch.Size([70, 98])
+Create Model...
+Train and test...
+
+ 2023-05-13 16:47:51 Training epoch 0
+acc_final_all:74.4% acc_final_avg:74.4%
+acc_layer_all:83.2% acc_layer_avg:83.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 0 Batch 300] ZSL test accuracy is 83.2%, Best_acc [83.2% | Epoch-0]
+
+[Epoch 0, Batch   300] Train loss: 8.187 
+
+ 2023-05-13 16:48:16 Training epoch 1
+acc_final_all:77.5% acc_final_avg:77.5%
+acc_layer_all:83.0% acc_layer_avg:83.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 1 Batch 300] ZSL test accuracy is 83.0%, Best_acc [83.2% | Epoch-0]
+
+[Epoch 1, Batch   300] Train loss: 8.186 
+
+ 2023-05-13 16:48:30 Training epoch 2
+acc_final_all:78.0% acc_final_avg:78.0%
+acc_layer_all:86.4% acc_layer_avg:86.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 2 Batch 300] ZSL test accuracy is 86.4%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 2, Batch   300] Train loss: 8.185 
+
+ 2023-05-13 16:48:45 Training epoch 3
+acc_final_all:76.9% acc_final_avg:76.9%
+acc_layer_all:81.4% acc_layer_avg:81.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 3 Batch 300] ZSL test accuracy is 81.4%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 3, Batch   300] Train loss: 8.185 
+
+ 2023-05-13 16:48:59 Training epoch 4
+acc_final_all:79.9% acc_final_avg:79.9%
+acc_layer_all:81.9% acc_layer_avg:81.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 4 Batch 300] ZSL test accuracy is 81.9%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 4, Batch   300] Train loss: 8.185 
+
+ 2023-05-13 16:49:14 Training epoch 5
+acc_final_all:82.9% acc_final_avg:82.9%
+acc_layer_all:84.1% acc_layer_avg:84.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 5 Batch 300] ZSL test accuracy is 84.1%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 5, Batch   300] Train loss: 8.185 
+
+ 2023-05-13 16:49:33 Training epoch 6
+acc_final_all:81.5% acc_final_avg:81.5%
+acc_layer_all:82.9% acc_layer_avg:82.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 6 Batch 300] ZSL test accuracy is 82.9%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 6, Batch   300] Train loss: 8.183 
+
+ 2023-05-13 16:49:52 Training epoch 7
+acc_final_all:80.6% acc_final_avg:80.6%
+acc_layer_all:82.2% acc_layer_avg:82.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 7 Batch 300] ZSL test accuracy is 82.2%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 7, Batch   300] Train loss: 8.182 
+
+ 2023-05-13 16:50:11 Training epoch 8
+acc_final_all:82.4% acc_final_avg:82.4%
+acc_layer_all:83.7% acc_layer_avg:83.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 8 Batch 300] ZSL test accuracy is 83.7%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 8, Batch   300] Train loss: 8.181 
+
+ 2023-05-13 16:50:30 Training epoch 9
+acc_final_all:81.1% acc_final_avg:81.1%
+acc_layer_all:81.9% acc_layer_avg:81.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 9 Batch 300] ZSL test accuracy is 81.9%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 9, Batch   300] Train loss: 8.180 
+
+ 2023-05-13 16:50:49 Training epoch 10
+acc_final_all:79.8% acc_final_avg:79.8%
+acc_layer_all:81.2% acc_layer_avg:81.2%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 10 Batch 300] ZSL test accuracy is 81.2%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 10, Batch   300] Train loss: 8.180 
+
+ 2023-05-13 16:51:08 Training epoch 11
+acc_final_all:80.5% acc_final_avg:80.5%
+acc_layer_all:81.6% acc_layer_avg:81.6%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 11 Batch 300] ZSL test accuracy is 81.6%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 11, Batch   300] Train loss: 8.180 
+
+ 2023-05-13 16:51:27 Training epoch 12
+acc_final_all:80.2% acc_final_avg:80.2%
+acc_layer_all:81.3% acc_layer_avg:81.3%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 12 Batch 300] ZSL test accuracy is 81.3%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 12, Batch   300] Train loss: 8.178 
+
+ 2023-05-13 16:51:46 Training epoch 13
+acc_final_all:80.0% acc_final_avg:80.0%
+acc_layer_all:80.8% acc_layer_avg:80.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 13 Batch 300] ZSL test accuracy is 80.8%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 13, Batch   300] Train loss: 8.179 
+
+ 2023-05-13 16:52:06 Training epoch 14
+acc_final_all:79.9% acc_final_avg:79.9%
+acc_layer_all:81.0% acc_layer_avg:81.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 14 Batch 300] ZSL test accuracy is 81.0%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 14, Batch   300] Train loss: 8.178 
+
+ 2023-05-13 16:52:25 Training epoch 15
+acc_final_all:79.1% acc_final_avg:79.1%
+acc_layer_all:80.5% acc_layer_avg:80.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 15 Batch 300] ZSL test accuracy is 80.5%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 15, Batch   300] Train loss: 8.178 
+
+ 2023-05-13 16:52:43 Training epoch 16
+acc_final_all:80.3% acc_final_avg:80.3%
+acc_layer_all:81.5% acc_layer_avg:81.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 16 Batch 300] ZSL test accuracy is 81.5%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 16, Batch   300] Train loss: 8.177 
+
+ 2023-05-13 16:53:03 Training epoch 17
+acc_final_all:80.5% acc_final_avg:80.5%
+acc_layer_all:81.5% acc_layer_avg:81.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 17 Batch 300] ZSL test accuracy is 81.5%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 17, Batch   300] Train loss: 8.177 
+
+ 2023-05-13 16:53:22 Training epoch 18
+acc_final_all:80.3% acc_final_avg:80.3%
+acc_layer_all:81.9% acc_layer_avg:81.9%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 18 Batch 300] ZSL test accuracy is 81.9%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 18, Batch   300] Train loss: 8.177 
+
+ 2023-05-13 16:53:41 Training epoch 19
+acc_final_all:76.5% acc_final_avg:76.5%
+acc_layer_all:77.8% acc_layer_avg:77.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 19 Batch 300] ZSL test accuracy is 77.8%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 19, Batch   300] Train loss: 8.176 
+
+ 2023-05-13 16:54:00 Training epoch 20
+acc_final_all:78.7% acc_final_avg:78.7%
+acc_layer_all:79.4% acc_layer_avg:79.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 20 Batch 300] ZSL test accuracy is 79.4%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 20, Batch   300] Train loss: 8.177 
+
+ 2023-05-13 16:54:19 Training epoch 21
+acc_final_all:77.9% acc_final_avg:77.9%
+acc_layer_all:78.4% acc_layer_avg:78.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 21 Batch 300] ZSL test accuracy is 78.4%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 21, Batch   300] Train loss: 8.176 
+
+ 2023-05-13 16:54:38 Training epoch 22
+acc_final_all:78.3% acc_final_avg:78.3%
+acc_layer_all:78.8% acc_layer_avg:78.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 22 Batch 300] ZSL test accuracy is 78.8%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 22, Batch   300] Train loss: 8.175 
+
+ 2023-05-13 16:54:57 Training epoch 23
+acc_final_all:78.5% acc_final_avg:78.5%
+acc_layer_all:79.7% acc_layer_avg:79.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 23 Batch 300] ZSL test accuracy is 79.7%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 23, Batch   300] Train loss: 8.175 
+
+ 2023-05-13 16:55:16 Training epoch 24
+acc_final_all:77.3% acc_final_avg:77.3%
+acc_layer_all:79.0% acc_layer_avg:79.0%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 24 Batch 300] ZSL test accuracy is 79.0%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 24, Batch   300] Train loss: 8.176 
+
+ 2023-05-13 16:55:34 Training epoch 25
+acc_final_all:79.9% acc_final_avg:79.9%
+acc_layer_all:80.8% acc_layer_avg:80.8%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 25 Batch 300] ZSL test accuracy is 80.8%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 25, Batch   300] Train loss: 8.175 
+
+ 2023-05-13 16:55:54 Training epoch 26
+acc_final_all:79.7% acc_final_avg:79.7%
+acc_layer_all:80.5% acc_layer_avg:80.5%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 26 Batch 300] ZSL test accuracy is 80.5%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 26, Batch   300] Train loss: 8.176 
+
+ 2023-05-13 16:56:13 Training epoch 27
+acc_final_all:80.3% acc_final_avg:80.3%
+acc_layer_all:81.1% acc_layer_avg:81.1%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 27 Batch 300] ZSL test accuracy is 81.1%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 27, Batch   300] Train loss: 8.175 
+
+ 2023-05-13 16:56:31 Training epoch 28
+acc_final_all:78.7% acc_final_avg:78.7%
+acc_layer_all:79.4% acc_layer_avg:79.4%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 28 Batch 300] ZSL test accuracy is 79.4%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 28, Batch   300] Train loss: 8.174 
+
+ 2023-05-13 16:56:51 Training epoch 29
+acc_final_all:78.3% acc_final_avg:78.3%
+acc_layer_all:79.7% acc_layer_avg:79.7%
+acc_pro_all:0.0% acc_pro_avg:0.0%
+[Epoch 29 Batch 300] ZSL test accuracy is 79.7%, Best_acc [86.4% | Epoch-2]
+
+[Epoch 29, Batch   300] Train loss: 8.174 
+Test with iou
