@@ -2,6 +2,7 @@
 PyTorch code for Deep Semantic-Visual Alignment for zero-shot remote sensing image scene classification.
 
 **Title:** " Deep Semantic-Visual Alignment for zero-shot remote sensing image scene classification"
+
 **Authors:** Wenjia Xu, Jiuniu Wang, Zhiwei Wei, Mugen Peng, Yirong Wu 
 
 **Abstract:**
