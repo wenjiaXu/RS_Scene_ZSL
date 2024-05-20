@@ -16,7 +16,7 @@ All experiments are performed with NVIDIA GeForce RTX 4090.
 Create environment with requirements.txt, you can follow this [link](https://blog.csdn.net/ft_sunshine/article/details/92215164).
 
 ## Prerequisites
-- Dataset: please download the dataset [RSSDIVCS]([https://ieeexplore.ieee.org/document/9321719](https://drive.google.com/drive/folders/1k0zpo0tixPsp9pxbcFHTdszJNvqq4-lA?usp=sharing), and change the opt.image_root to the dataset root path on your machine
+- Dataset: please download the RSSDIVCS dataset over [Google Drive](https://drive.google.com/drive/folders/1k0zpo0tixPsp9pxbcFHTdszJNvqq4-lA?usp=sharing), and change the opt.image_root to the dataset root path on your machine
   
 - image_embedding and class_embedding: change the  image_embedding_root and image_embedding_root in script to the true path on your machine
 
